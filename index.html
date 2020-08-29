@@ -1,8 +1,79 @@
-<html>
+<html lang="en">
     <head>
-
+        <link rel="stylesheet" href="css/survey.css">
     </head>
     <body>
-        <h1 id="title"> Survey on Compter Game Prefernces</h1>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <h1 id="title" class="center">Compter Game Prefernces</h1>
+        <p id="description" class="center"> Please help with this survey to identify the best computer games.</p>
+
+            <div>
+                  <form class="center" id="survey-form">
+                      
+                         <label id="name-label" for="name">Name:</label>
+                            <input 
+                            type="text" 
+                            name="name-label" 
+                            id="name" 
+                            placeholder="Enter your name"
+                            required/>
+
+                         <label id="email-label" for="email">Email:</label>
+                            <input 
+                            type="email" 
+                            name="email" 
+                            id="email"
+                            placeholder="Enter you Email"
+                            required/>
+                         
+                         <label id="number-label" for="age">Age:</label>
+                            <input 
+                            type="number" 
+                            name="age" 
+                            id="number" 
+                            min="10"
+                            max="120" 
+                            placeholder="Age"
+                            required/>
+                         
+                         <div id="game-type">
+                          <label for="game-type">Choose your favourite genre:</label>
+                        </div>
+                            <select id="dropdown" name="game-type">
+                              <option value="FPS">FPS</option>
+                              <option value="(MMO)RPG">(MMO)RPG</option>
+                              <option value="Puzzle">Puzzle</option>
+                              <option value="Driving">Driving</option>
+                            </select><br>
+                            <div class="radio-buttons">
+                        <div id="opinion">
+                            <p>Please give your opinion on FPS games;</p>
+                        </div> 
+                        
+                                <label for="excellent">Excellent<input type="radio" id="excellent" name="FPS-opinion" value="Excellent" checked></label>
+                                
+                                <label for="O.K.">O.K.<input type="radio" id="O.K." name="FPS-opinion" value="O.K."></label>
+                                
+                                <label for="Just No">Just No<input type="radio" id="Just No" name="FPS-opinion" value="Just No"></label>
+                                
+                        </div>
+                        <p>What features do you enjoy about (MMO)RPG's?</p>
+                            
+                            <label for="exploration">Exploration<input type="checkbox" id="exploration" name="exploration" value="exploration"></label>
+                            
+                            <label for="action">Action<input type="checkbox" id="action" name="action" value="Car"></label>
+                            
+                            <label for="story">Story<input type="checkbox" id="story" name="story" value="Boat"></label><br> 
+
+                            <label for="suggestions">Any comments and suggestions:</label>
+                            <textarea id="suggestions" name="suggestions" placeholder="Enter you message here...">
+                            </textarea><br>
+
+                         <input
+                            id="submit"
+                            type="submit" 
+                            value="submit"/>
+                  </form>
+            </div>
     </body>
 </html>
